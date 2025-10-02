@@ -1,0 +1,19 @@
+{
+  "name": "tribe-api-examples",
+  "version": "1.0.0",
+  "description": "Example code for using the TRIBE API",
+  "main": "index.js",
+  "scripts": {
+    "example:insights": "node examples/insights.js",
+    "example:events": "node examples/events.js",
+    "example:knowledge-base": "node examples/knowledge-base.js",
+    "example:batch-events": "node examples/batch-events.js",
+    "test": "node test/api-test.js"
+  },
+  "keywords": ["tribe", "api", "examples", "analytics"],
+  "author": "TRIBE Inc",
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  }
+}
