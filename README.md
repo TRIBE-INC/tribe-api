@@ -1,10 +1,22 @@
 # TRIBE API Examples
 
-Official examples for using the TRIBE API.
+Official code examples for using the TRIBE API - working examples you can run immediately.
 
-## Quick Start
+## 📚 Documentation
+
+**Full API Documentation**: https://tribecode.ai/docs/api
+
+- [API Overview](https://tribecode.ai/docs/api) - Getting started and authentication
+- [Quickstart Guide](https://tribecode.ai/docs/api/quickstart) - Step-by-step tutorial
+- [Complete API Reference](https://tribecode.ai/docs/api/reference) - All endpoints with examples
+
+## 🚀 Quick Start
 
 ```bash
+# Clone this repository
+git clone https://github.com/TRIBE-INC/tribe-api.git
+cd tribe-api
+
 # Install dependencies
 npm install
 
@@ -17,24 +29,52 @@ npm run example:events
 npm run example:knowledge-base
 ```
 
-## Examples Included
+## 📖 Examples
 
-- **insights.js** - Fetch and display analytics insights
-- **events.js** - Track custom events
-- **knowledge-base.js** - Search knowledge base articles
-- **batch-events.js** - Track multiple events efficiently
-- **webhooks.js** - Set up webhook listeners (coming soon)
+All examples use the production API at `https://tribecode.ai/api`:
 
-## Documentation
+### Working Examples (✅ Production Ready)
 
-Full API documentation: https://tribecode.ai/docs/api
+- **[insights.js](./examples/insights.js)** - Fetch AI-powered analytics insights from your telemetry data
+  - Endpoint: `GET /api/analytics/insights`
+  - Returns personalized recommendations based on your coding patterns
 
-## Authentication
+- **[events.js](./examples/events.js)** - Retrieve development telemetry events
+  - Endpoint: `GET /api/analytics/events`
+  - Query and filter your development activity events
 
-Get your API key from: https://tribecode.ai/dashboard/settings
+- **[knowledge-base.js](./examples/knowledge-base.js)** - Search knowledge base articles
+  - Endpoint: `GET /api/knowledge-base/articles`
+  - Find best practices and documentation
 
-## Support
+### CLI-Only Examples
 
-- Email: api-support@tribecode.ai
-- Docs: https://docs.tribecode.ai
-- Issues: https://github.com/TRIBE-INC/tribe-api/issues
+- **[batch-events.js](./examples/batch-events.js)** - Track multiple events efficiently (write operations)
+
+## 🔑 Authentication
+
+Get your API key from the dashboard:
+
+1. Go to https://tribecode.ai/tribe/settings/api-keys
+2. Click "Generate New Key"
+3. Copy and save your key securely
+
+Your API key format: `sk_live_xxxxx` or `sk_test_xxxxx`
+
+## 🛠️ API Endpoints
+
+| Method | Endpoint | Description | Example |
+|--------|----------|-------------|---------|
+| `GET` | `/api/analytics/insights` | Get AI insights | [insights.js](./examples/insights.js) |
+| `GET` | `/api/analytics/events` | Retrieve telemetry events | [events.js](./examples/events.js) |
+| `GET` | `/api/knowledge-base/articles` | Search articles | [knowledge-base.js](./examples/knowledge-base.js) |
+
+## 📞 Support
+
+- **Documentation**: https://tribecode.ai/docs/api
+- **Issues**: https://github.com/TRIBE-INC/tribe-api/issues
+- **Email**: api-support@tribecode.ai
+
+## 📝 License
+
+MIT
